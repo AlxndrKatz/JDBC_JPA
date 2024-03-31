@@ -1,13 +1,15 @@
 package overridetech.jdbc.jpa.service;
 
 import overridetech.jdbc.jpa.dao.UserDao;
+import overridetech.jdbc.jpa.dao.UserDaoHibernateImpl;
 import overridetech.jdbc.jpa.dao.UserDaoJDBCImpl;
 import overridetech.jdbc.jpa.model.User;
 
 import java.util.List;
 
 public class UserServiceImpl implements UserService {
-    private UserDao userDao = new UserDaoJDBCImpl();
+    //private UserDao userDao = new UserDaoJDBCImpl();
+    private UserDao userDao = new UserDaoHibernateImpl();
     public void createUsersTable() {
         userDao.createUsersTable();
     }

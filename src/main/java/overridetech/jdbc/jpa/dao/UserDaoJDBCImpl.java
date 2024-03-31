@@ -1,5 +1,6 @@
 package overridetech.jdbc.jpa.dao;
 
+import org.hibernate.SessionFactory;
 import overridetech.jdbc.jpa.model.User;
 import overridetech.jdbc.jpa.util.Util;
 
