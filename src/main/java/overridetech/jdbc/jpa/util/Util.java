@@ -36,7 +36,7 @@ public class Util {
         configuration.setProperty(Environment.USER, USER);
         configuration.setProperty(Environment.PASS, PASSWORD);
         configuration.setProperty(Environment.SHOW_SQL, "true");
-        configuration.setProperty(Environment.HBM2DDL_AUTO, "none");
+        configuration.setProperty(Environment.HBM2DDL_AUTO, "validate");
         configuration.addAnnotatedClass(User.class);
 
         sessionFactory = configuration.buildSessionFactory();

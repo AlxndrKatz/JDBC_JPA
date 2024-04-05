@@ -16,7 +16,7 @@ public class User {
     private String lastName;
 
     @Column(name = "age", columnDefinition = "SMALLINT")
-    private Byte age;
+    private short age;
 
     public User() {
 
@@ -52,7 +52,7 @@ public class User {
         this.lastName = lastName;
     }
 
-    public Byte getAge() {
+    public short getAge() {
         return age;
     }
 
